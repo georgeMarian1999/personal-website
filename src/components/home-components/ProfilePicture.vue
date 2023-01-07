@@ -13,8 +13,10 @@ import profilePicture from "@/assets/pictures/profile.png";
   width: 150px;
   background: var(--background-color);
   height: 150px;
+  right: 45px;
+  top: 15px;
   transform: rotate(45deg);
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 

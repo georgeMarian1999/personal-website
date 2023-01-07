@@ -11,6 +11,6 @@ import ContactContent from "@/components/contact-components/ContactContent.vue";
 
 <style>
 .contact {
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 </style>

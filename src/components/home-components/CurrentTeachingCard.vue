@@ -32,8 +32,10 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
       <div class="carousel-inner">
         <div class="carousel-item height-full active" style="margin-top: 90px">
           <div class="container height-full">
-            <div class="row height-full align-content-center">
-              <div class="col">
+            <div
+              class="row height-full justify-content-center align-content-center"
+            >
+              <div class="col d-none d-xl-block">
                 <img
                   :src="aiPicture"
                   alt="..."
@@ -42,7 +44,9 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                 />
               </div>
               <div class="col">
-                <div class="row height-full align-content-between">
+                <div
+                  class="row height-full align-content-between justify-content-center"
+                >
                   <div class="row justify-content-center">
                     <h2>Artificial inteligence</h2>
                   </div>
@@ -58,7 +62,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                   </div>
                   <div class="row justify-content-center">
                     <button
-                      class="btn btn-primary"
+                      class="btn mt-3 btn-primary"
                       style="width: 80%"
                       type="button"
                     >
@@ -72,9 +76,13 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
         </div>
         <div class="carousel-item height-full" style="margin-top: 90px">
           <div class="container height-full">
-            <div class="row height-full align-content-center">
+            <div
+              class="row height-full justify-content-center align-content-center"
+            >
               <div class="col web-programming-slide">
-                <div class="row height-full align-content-between">
+                <div
+                  class="row height-full align-content-between justify-content-center"
+                >
                   <div class="row justify-content-center">
                     <h2>Web Programming</h2>
                   </div>
@@ -89,7 +97,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                   </div>
                   <div class="row justify-content-center">
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-primary mt-3"
                       style="width: 80%"
                       type="button"
                     >
@@ -98,7 +106,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col d-none d-xl-block">
                 <img
                   :src="javascriptPicture"
                   alt="..."

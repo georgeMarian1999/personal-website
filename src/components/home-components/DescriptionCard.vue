@@ -10,9 +10,14 @@ const navigateToContact = () => {
 <template>
   <div class="section-card">
     <div class="container height-full padding-left-l">
-      <div class="row height-full align-content-center justify-content-between">
-        <div class="col-6">
-          <div class="text-row row height-full align-content-around">
+      <div
+        class="row height-full align-content-center justify-content-between"
+        style="min-height: 250px"
+      >
+        <div class="col-12 description-text">
+          <div
+            class="text-row row height-full align-content-around position-relative"
+          >
             <div class="row">
               <div class="col">Marian Mihailescu George</div>
             </div>
@@ -37,10 +42,8 @@ const navigateToContact = () => {
                 </button>
               </div>
             </div>
+            <ProfilePicture></ProfilePicture>
           </div>
-        </div>
-        <div class="col-3 align-content-end">
-          <ProfilePicture></ProfilePicture>
         </div>
       </div>
     </div>
@@ -48,7 +51,16 @@ const navigateToContact = () => {
 </template>
 
 <style lang="scss">
-.text-row {
-  padding-left: 40px;
+.description-text {
+  z-index: 4;
+  background: var(--component-background-color);
+}
+
+@media (max-width: 768px) {
+  .description-picture {
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+  }
 }
 </style>

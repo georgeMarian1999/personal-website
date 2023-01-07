@@ -3,8 +3,12 @@
 <template>
   <div class="contact-footer row align-content-center">
     <div class="col-6 d-none d-lg-block col-md-3 email-contact">
-      <div class="row justify-content-center">Please email me at:</div>
-      <div class="row justify-content-center">mariangeorge@scs.ubbcluj.ro</div>
+      <div class="row height-full align-content-center justify-content-center">
+        <div class="row justify-content-center">Please email me at:</div>
+        <div class="row justify-content-center">
+          mariangeorge@scs.ubbcluj.ro
+        </div>
+      </div>
     </div>
     <div class="col-12 d-none d-lg-block col-md-6 location-contact">
       <div class="row align-content-center justify-content-center">
@@ -14,18 +18,20 @@
       <div class="row align-content-center justify-content-center">
         Please see the detailed schedule for all the hours.
       </div>
-      <div class="row align-content-center justify-content-center">
+      <div class="row align-content-center mb-3 justify-content-center">
         <div class="col-4">
           <button class="btn btn-primary">See schedule</button>
         </div>
       </div>
     </div>
     <div class="col-6 d-none d-lg-block col-md-3 phone-contact">
-      <div class="row align-content-center justify-content-center">
-        In case of emergencies text me at:
-      </div>
-      <div class="row align-content-center justify-content-center">
-        + 1 (313) (4048) (290)
+      <div class="row height-full align-content-center justify-content-center">
+        <div class="row align-content-center justify-content-center">
+          In case of emergencies text me at:
+        </div>
+        <div class="row align-content-center justify-content-center">
+          + 1 (313) (4048) (290)
+        </div>
       </div>
     </div>
 
@@ -44,8 +50,12 @@
       </div>
     </div>
     <div class="col-6 d-lg-none col-lg-3 email-contact">
-      <div class="row justify-content-center">Please email me at:</div>
-      <div class="row justify-content-center">mariangeorge@scs.ubbcluj.ro</div>
+      <div class="row height-full align-content-center justify-content-center">
+        <div class="row justify-content-center">Please email me at:</div>
+        <div class="row justify-content-center">
+          mariangeorge@scs.ubbcluj.ro
+        </div>
+      </div>
     </div>
     <div class="col-6 d-lg-none col-lg-3 phone-contact">
       <div class="row align-content-center justify-content-center">

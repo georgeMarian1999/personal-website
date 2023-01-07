@@ -6,7 +6,7 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
   <div class="section-card position-relative">
     <div class="container height-full">
       <div class="row align-content-center height-full justify-content-end">
-        <div class="about-me-image">
+        <div class="about-me-image d-none d-sm-block">
           <img :src="mobilePicture" alt="Mobile" height="250" />
         </div>
         <div class="col-12 col-md-8 about-me-description">
