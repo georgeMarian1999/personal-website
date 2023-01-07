@@ -9,7 +9,7 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
         <div class="about-me-image">
           <img :src="mobilePicture" alt="Mobile" height="250" />
         </div>
-        <div class="col-8 about-me-description">
+        <div class="col-12 col-md-8 about-me-description">
           <div class="row">
             <h2>About me</h2>
           </div>
@@ -42,11 +42,11 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
   position: relative;
   z-index: 3;
   min-height: 180px;
-  margin-top: 10px;
+  // margin-top: 10px;
   border-radius: 3px;
   padding-left: 25px !important;
   padding-top: 25px;
-  margin-right: 45px;
+  // margin-right: 45px;
   background: var(--component-background-color);
 }
 </style>

@@ -11,10 +11,10 @@ export default defineComponent({
 <template>
   <div class="section-card container-fluid height-full contact-content">
     <div class="row height-full">
-      <div class="col contact-form-col">
+      <div class="col-12 col-lg-6 contact-form-col">
         <ContactForm />
       </div>
-      <div class="col">
+      <div class="col-12 col-lg-6">
         <ContactPicture />
       </div>
     </div>

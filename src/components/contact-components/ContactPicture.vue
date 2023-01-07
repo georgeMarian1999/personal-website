@@ -7,12 +7,19 @@ export default defineComponent({
 });
 </script>
 <template>
-  <div class="row position-relative">
-    <ContactMe class="contact-me" />
+  <div class="container contact-me-container">
+    <div class="row height-full position-relative">
+      <ContactMe class="contact-me" />
+    </div>
   </div>
 </template>
 
 <style scoped>
+.contact-me-container {
+  min-height: 500px;
+  z-index: 1;
+}
+
 .contact-me {
   position: absolute;
   left: 30px;

@@ -17,7 +17,7 @@
         <option value="2">Artificial Intelligence</option>
         <option value="3">Mobile Development</option>
       </select>
-      <label>Select the course you are attending.</label>
+      <label>Select the course</label>
     </div>
     <div class="row mb-4 justify-content-center position-relative">
       <textarea
@@ -42,7 +42,7 @@
     margin-top: 45px;
 
     label {
-      max-width: 50%;
+      max-width: 70%;
       text-align: left;
       padding-left: 0 !important;
       position: absolute;
@@ -53,7 +53,7 @@
     input,
     textarea,
     select {
-      max-width: 50%;
+      max-width: 70%;
       background: var(--component-background-color);
       color: var(--headings-text);
       border-right: none;
@@ -98,6 +98,16 @@
     input[type="submit"] {
       background: var(--primary-color);
       border: none !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    .row {
+      label {
+        // min-
+      }
     }
   }
 }
