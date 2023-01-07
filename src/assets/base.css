@@ -1,0 +1,34 @@
+/* semantic color variables for this project */
+:root.theme--dark {
+    --component-background-color: #212121;
+    --background-color: #1A1A1A;
+    --headings-text: #F8F8F8;
+    --body-text: rgba(248, 248, 248, 0.43);
+    --primary-color: #4e61de;
+    --secondary-color: #75E6DA;
+    --color-text: rgba(248, 248, 248, 0.82)
+}
+
+:root.theme--light {
+    --component-background-color: #F8F8F8;
+    --background-color: #F8F8F8;
+    --headings-text: #1A1A1A;
+    --primary-color: #0d2bce;
+    --secondary-color: #75E6DA;
+    --color-text: #212121;
+}
+
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--background-color);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
