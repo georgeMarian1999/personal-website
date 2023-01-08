@@ -47,6 +47,10 @@
   padding-left: 20px;
 }
 
+.modal-backdrop {
+  z-index: 5;
+}
+
 .primary-button {
   background-color: var(--primary-color);
   border-color: var(--primary-color);

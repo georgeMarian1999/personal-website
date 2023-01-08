@@ -133,6 +133,12 @@
   }
 }
 
+.modal-dialog {
+  .modal-content {
+    z-index: 20 !important;
+  }
+}
+
 #scheduleModal {
   // background: black;
 }
@@ -155,7 +161,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 7;
   margin: auto;
   min-height: 60px;
   border-top: 1px solid var(--primary-color);

@@ -58,7 +58,7 @@ const navigateToContact = () => {
 
 <style lang="scss">
 .description-text {
-  z-index: 4;
+  z-index: 2;
   background: var(--component-background-color);
 }
 
@@ -67,6 +67,14 @@ const navigateToContact = () => {
     position: absolute;
     right: 40px;
     z-index: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-row {
+    .row {
+      text-align: center;
+    }
   }
 }
 </style>
