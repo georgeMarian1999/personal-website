@@ -15,12 +15,15 @@
         You can find me Monday, Tuesday, Thursday and Friday in the FSEGA
         building.
       </div>
-      <div class="row align-content-center justify-content-center">
-        Please see the detailed schedule for all the hours.
-      </div>
       <div class="row align-content-center mb-3 justify-content-center">
         <div class="col-4">
-          <button class="btn btn-primary">See schedule</button>
+          <button
+            class="btn btn-primary"
+            data-bs-target="#scheduleModal"
+            data-bs-toggle="modal"
+          >
+            See schedule
+          </button>
         </div>
       </div>
     </div>
@@ -40,12 +43,15 @@
         You can find me Monday, Tuesday, Thursday and Friday in the FSEGA
         building.
       </div>
-      <div class="row align-content-center justify-content-center">
-        Please see the detailed schedule for all the hours.
-      </div>
       <div class="row align-content-center mb-2 justify-content-center">
         <div class="col-4">
-          <button class="btn btn-primary mb-1">See schedule</button>
+          <button
+            class="btn btn-primary mb-1"
+            data-bs-target="#scheduleModal"
+            data-bs-toggle="modal"
+          >
+            See schedule
+          </button>
         </div>
       </div>
     </div>
@@ -65,10 +71,76 @@
         + 1 (313) (4048) (290)
       </div>
     </div>
+
+    <div
+      id="scheduleModal"
+      aria-hidden="true"
+      aria-labelledby="scheduleModalLabel"
+      class="modal fade"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              id="exampleModalLabel"
+              class="modal-title color-headings-text fs-5"
+            >
+              Meeting schedule
+            </h1>
+          </div>
+          <div class="modal-body">
+            <p>You can find me in the FSEGA building at these hourse</p>
+            <br />
+            <p>Monday: Between 10:00 AM - 12:00 PM and 14:00 PM and 16:00 PM</p>
+            <br />
+            <p>
+              Tuesday: Between 10:00 AM - 12:00 PM and 14:00 PM and 16:00 PM
+            </p>
+            <br />
+            <p>
+              Thursday: Between 10:00 AM - 12:00 PM and 14:00 PM and 16:00 PM
+            </p>
+            <br />
+            <p>Friday: Between 10:00 AM - 12:00 PM and 14:00 PM and 16:00 PM</p>
+            <br />
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
+.modal-dialog {
+  min-width: 600px;
+}
+
+#scheduleModal {
+  // background: black;
+}
+
+.modal-header {
+  background: var(--component-background-color);
+}
+
+.modal-body {
+  background: var(--component-background-color);
+}
+
+.modal-footer {
+  background: var(--component-background-color);
+}
+
 .contact-footer {
   color: var(--headings-text);
   position: fixed;

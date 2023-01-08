@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from "vue";
+import * as bootstrap from "bootstrap/dist/js/bootstrap";
+import ContactToast from "@/components/contact-components/ContactToast.vue";
 import * as emailjs from "emailjs-com";
 
 const serviceID = "service_k5eaprq";
@@ -11,17 +13,17 @@ const email = ref("");
 const topic = ref("");
 const message = ref("");
 
-const modalShow = ref(false);
 const sendEmail = (e) => {
   try {
-    emailjs.sendForm(serviceID, templateID, e.target, userID, {
-      name: name,
-      email: email,
-      topic: topic,
-      message: message,
-    });
-
-    modalShow.value = true;
+    e.preventDefault();
+    emailjs.sendForm(serviceID, templateID, e.target, userID);
+    const toastLiveExample = document.getElementById("successToast");
+    const toast = new bootstrap.Toast(toastLiveExample);
+    toast.show();
+    name.value = "";
+    email.value = "";
+    topic.value = "";
+    message.value = "";
   } catch (error) {
     console.log({ error });
   }
@@ -35,6 +37,7 @@ const sendEmail = (e) => {
         id="formYourName"
         v-model="name"
         class="form-control"
+        name="name"
         type="text"
       />
       <label
@@ -49,6 +52,7 @@ const sendEmail = (e) => {
         id="formYourEmail"
         v-model="email"
         class="form-control"
+        name="email"
         type="text"
       />
       <label
@@ -59,11 +63,18 @@ const sendEmail = (e) => {
       >
     </div>
     <div class="row mb-4 justify-content-center position-relative">
-      <select v-model="topic" class="form-select">
+      <select v-model="topic" class="form-select" name="topic">
         <option hidden selected>Choose an option</option>
-        <option value="1">Web Programming</option>
-        <option value="2">Artificial Intelligence</option>
-        <option value="3">Mobile Development</option>
+        <option value="Course: Web Programming">Course: Web Programming</option>
+        <option value="Course: Artificial Intelligence">
+          Course: Artificial Intelligence
+        </option>
+        <option value="Course: Mobile Development">
+          Course: Mobile Development
+        </option>
+        <option value="Bachelor/Dissertation collaboration">
+          Bachelor/Dissertation collaboration
+        </option>
       </select>
       <label>Select the topic</label>
     </div>
@@ -72,6 +83,7 @@ const sendEmail = (e) => {
         id="formTextArea"
         v-model="message"
         class="form-control"
+        name="message"
         placeholder="Your question"
         rows="3"
       />
@@ -90,8 +102,7 @@ const sendEmail = (e) => {
       />
     </div>
   </form>
-
-  <b-modal v-model="modalShow">Hello From Modal!</b-modal>
+  <ContactToast />
 </template>
 
 <style lang="scss">
