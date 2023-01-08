@@ -16,7 +16,7 @@ const navigateToContact = () => {
       >
         <div class="col-12 col-md-7 description-text">
           <div
-            class="text-row mt-4 row height-full align-content-around position-relative"
+            class="text-row row height-full align-content-around position-relative"
           >
             <div class="row">
               <div class="col">Marian Mihailescu George</div>
@@ -72,6 +72,8 @@ const navigateToContact = () => {
 
 @media (max-width: 600px) {
   .text-row {
+    margin-top: 1.5rem !important;
+
     .row {
       text-align: center;
     }
