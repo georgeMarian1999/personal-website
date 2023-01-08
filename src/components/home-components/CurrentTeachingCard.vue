@@ -97,7 +97,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                   </div>
                   <div class="row justify-content-center">
                     <button
-                      class="btn btn-primary mt-3"
+                      class="btn btn-primary mt-3 mb-3"
                       style="width: 80%"
                       type="button"
                     >

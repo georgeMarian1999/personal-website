@@ -16,7 +16,7 @@ import profilePicture from "@/assets/pictures/profile.png";
   right: 45px;
   top: 15px;
   transform: rotate(45deg);
-  position: absolute;
+  // position: absolute;
   overflow: hidden;
 }
 
@@ -26,5 +26,12 @@ import profilePicture from "@/assets/pictures/profile.png";
   top: -20px;
   right: -20px;
   transform: rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
 }
 </style>

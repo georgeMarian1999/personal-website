@@ -142,6 +142,16 @@
   animation: rotate 15s linear infinite;
 }
 
+@media (max-width: 600px) {
+  .btn-see-all-news {
+    width: 90px !important;
+    font-size: 10px !important;
+  }
+  .carousel-item {
+    font-size: 10px !important;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);

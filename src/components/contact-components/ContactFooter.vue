@@ -121,8 +121,16 @@
 </template>
 
 <style lang="scss">
-.modal-dialog {
-  min-width: 600px;
+@media (min-width: 1024px) {
+  .modal-dialog {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-dialog {
+    max-width: 550px;
+  }
 }
 
 #scheduleModal {

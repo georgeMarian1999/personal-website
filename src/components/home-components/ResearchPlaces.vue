@@ -21,7 +21,7 @@ onMounted(() => {
     <div class="research-box">
       <div class="row mt-3 justify-content-center">
         <div class="col text-align-center">
-          <h5>Bachelor/Dissertation collaboration</h5>
+          <p class="research-title">Bachelor/Dissertation collaboration</p>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -61,15 +61,20 @@ onMounted(() => {
   z-index: 1;
 }
 
+.research-title {
+  font-size: 16px;
+}
+
 .research-number {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .limited-spaces-text {
   position: absolute;
-  top: 75px;
+  top: 65px;
   right: 0;
   left: 0;
+  font-size: 14px;
   margin: auto;
 }
 
@@ -115,9 +120,13 @@ onMounted(() => {
   animation: rotateInverse 10s linear infinite;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .research-number {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .btn-see-all-research {
+    width: 90px !important;
+    font-size: 10px !important;
   }
 }
 

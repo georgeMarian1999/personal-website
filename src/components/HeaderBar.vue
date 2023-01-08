@@ -14,18 +14,8 @@
             <div class="col">
               <router-link to="/contact">Contact</router-link>
             </div>
-            <div class="col">
-              <router-link to="/">Courses</router-link>
-            </div>
           </div>
         </div>
-        <!--        <div class="col-2">
-                  <div class="row height-full align-content-center">
-                    <div class="col">
-                      <ThemeSwitch />
-                    </div>
-                  </div>
-                </div>-->
       </div>
     </div>
   </nav>
@@ -53,7 +43,6 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 </style>
