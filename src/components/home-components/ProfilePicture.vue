@@ -28,7 +28,7 @@ import profilePicture from "@/assets/pictures/profile.png";
   transform: rotate(-45deg);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .profile-picture {
     width: 120px;
     height: 120px;

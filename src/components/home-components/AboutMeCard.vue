@@ -11,7 +11,7 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
         </div>
         <div class="col-12 col-md-8 about-me-description">
           <div class="row">
-            <h2>About me</h2>
+            <h2>Who I am</h2>
           </div>
           <div class="row align-content-center justify-content-center">
             <p>

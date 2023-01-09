@@ -61,14 +61,6 @@ const navigateToContact = () => {
 }
 
 @media (max-width: 768px) {
-  .description-picture {
-    position: absolute;
-    right: 40px;
-    z-index: 1;
-  }
-}
-
-@media (max-width: 600px) {
   .text-row {
     margin-top: 1.5rem !important;
 
