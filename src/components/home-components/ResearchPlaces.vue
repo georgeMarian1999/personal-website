@@ -4,12 +4,12 @@ import { onMounted, ref } from "vue";
 const number = ref(4);
 
 onMounted(() => {
-  setInterval(() => {
-    number.value = number.value + 2;
-    if (number.value > 10) {
-      number.value = 2;
-    }
-  }, 7000);
+  // setInterval(() => {
+  //   number.value = number.value + 2;
+  //   if (number.value > 10) {
+  //     number.value = 2;
+  //   }
+  // }, 7000);
 });
 </script>
 
@@ -27,7 +27,12 @@ onMounted(() => {
       <div class="row justify-content-center">
         <p
           v-if="number < 5"
-          style="color: red; margin-bottom: -20px; width: 140px"
+          style="
+            color: red;
+            margin-top: -10px;
+            margin-bottom: -10px;
+            width: 140px;
+          "
         >
           Limited spaces!
         </p>
@@ -88,7 +93,8 @@ onMounted(() => {
   }
 
   .btn-see-all-research {
-    width: 130px;
+    font-size: 12px;
+    width: 120px;
     margin: auto;
   }
 }

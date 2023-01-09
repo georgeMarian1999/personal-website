@@ -209,4 +209,11 @@
   text-align: center;
   padding-top: 6px;
 }
+
+@media (max-width: 600px) {
+  .email-contact,
+  .phone-contact {
+    font-size: 12px;
+  }
+}
 </style>

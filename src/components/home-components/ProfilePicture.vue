@@ -32,6 +32,8 @@ import profilePicture from "@/assets/pictures/profile.png";
   .profile-picture {
     width: 120px;
     height: 120px;
+    margin-top: 45px;
+    margin-bottom: 45px;
   }
 }
 </style>

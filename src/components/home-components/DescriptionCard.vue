@@ -44,10 +44,8 @@ const navigateToContact = () => {
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-5">
-          <div
-            class="row section-card align-content-center justify-content-center"
-          >
+        <div class="col-12 col-md-5 profile-picture-col">
+          <div class="row mt-3 align-content-center justify-content-center">
             <ProfilePicture></ProfilePicture>
           </div>
         </div>
