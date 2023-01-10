@@ -32,11 +32,25 @@
               href="#"
               role="button"
             >
-              Courses
+              Teaching
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <RouterLink
+                  :to="{ name: 'course', params: { id: 1 } }"
+                  class="dropdown-item"
+                  href="#"
+                  >Web programming
+                </RouterLink>
+              </li>
+              <b-dropdown-divider></b-dropdown-divider>
+              <li>
+                <RouterLink
+                  :to="{ name: 'course', params: { id: 2 } }"
+                  class="dropdown-item"
+                  >Artificial Intelligence
+                </RouterLink>
+              </li>
             </ul>
           </li>
           <li class="nav-item">

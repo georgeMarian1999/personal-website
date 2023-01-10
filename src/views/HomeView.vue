@@ -3,7 +3,6 @@ import DescriptionCard from "@/components/home-components/DescriptionCard.vue";
 import CurrentTeachingCard from "@/components/home-components/CurrentTeachingCard.vue";
 import AboutMeCard from "@/components/home-components/AboutMeCard.vue";
 import ImportantNews from "@/components/home-components/ImportantNews.vue";
-import ResearchPlaces from "@/components/home-components/ResearchPlaces.vue";
 </script>
 
 <template>
@@ -12,10 +11,10 @@ import ResearchPlaces from "@/components/home-components/ResearchPlaces.vue";
       <div class="col-12 col-xl-6">
         <DescriptionCard></DescriptionCard>
       </div>
-      <div class="col-6 col-xl-3">
-        <ResearchPlaces />
-      </div>
-      <div class="col-6 col-xl-3">
+      <!--      <div class="col-6 col-xl-3">-->
+      <!--        <ResearchPlaces />-->
+      <!--      </div>-->
+      <div class="col-12 col-xl-6">
         <ImportantNews />
       </div>
     </div>

@@ -4,12 +4,30 @@
   <div class="news-box-wrapper section-card">
     <div class="news-box">
       <div class="row mt-3 justify-content-center">
-        <div class="col text-align-center"><h4>News</h4></div>
+        <div class="col text-align-center"><h4>Important News</h4></div>
       </div>
       <div class="row">
         <div class="col">
           <button class="btn btn-primary btn-see-all-news" type="button">
             See all news
+          </button>
+          <button
+            class="carousel-control-prev"
+            data-bs-slide="prev"
+            data-bs-target="#carouselNewsExampleIndicators"
+            type="button"
+          >
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            data-bs-slide="next"
+            data-bs-target="#carouselNewsExampleIndicators"
+            type="button"
+          >
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
           </button>
           <div
             id="carouselNewsExampleIndicators"
@@ -43,30 +61,6 @@
                 </p>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              data-bs-slide="prev"
-              data-bs-target="#carouselNewsExampleIndicators"
-              type="button"
-            >
-              <span
-                aria-hidden="true"
-                class="carousel-control-prev-icon"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              data-bs-slide="next"
-              data-bs-target="#carouselNewsExampleIndicators"
-              type="button"
-            >
-              <span
-                aria-hidden="true"
-                class="carousel-control-next-icon"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
@@ -93,33 +87,35 @@
     border-radius: 10px;
     background: var(--background-color);
 
-    .carousel-item {
-      padding-top: 0;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 25px;
+    .carousel-inner {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
-      font-size: 13px;
+    .carousel-item {
+      padding: 0 15px 25px;
+
+      font-size: 15px;
     }
 
     .carousel-control-prev-icon {
       position: absolute;
-      bottom: -5px;
+      bottom: 20px;
     }
 
     .carousel-control-next-icon {
       position: absolute;
-      bottom: -5px;
+      bottom: 20px;
     }
   }
 
   .btn-see-all-news {
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     z-index: 5;
     left: 0;
     right: 0;
-    font-size: 12px;
+    font-size: 15px;
     width: 120px;
     margin: auto;
   }
@@ -128,18 +124,16 @@
 .news-box-wrapper::before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 250%;
+  width: 150%;
+  height: 300%;
   background: conic-gradient(
     transparent,
     transparent,
     transparent,
     transparent,
-    #75e6da,
-    #89cff0,
     #4e61de
   );
-  animation: rotate 15s linear infinite;
+  animation: rotate 12s linear infinite;
 }
 
 @media (max-width: 600px) {
