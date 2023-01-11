@@ -3,6 +3,8 @@ import BarChartIcon from "@/components/svg-components/BarChartIcon.vue";
 import HddIcon from "@/components/svg-components/HddIcon.vue";
 import LaptopIcon from "@/components/svg-components/LaptopIcon.vue";
 import CheckIcon from "@/components/svg-components/CheckIcon.vue";
+import BodyTextIcon from "@/components/svg-components/BodyTextIcon.vue";
+import AsterixIcon from "@/components/svg-components/AsterixIcon.vue";
 
 const props = defineProps(["lecture", "currentLecture"]);
 const emit = defineEmits(["chooseLecture"]);
@@ -29,6 +31,8 @@ const changeLecture = () => {
             <BarChartIcon v-if="lecture.id === 1"></BarChartIcon>
             <HddIcon v-if="lecture.id === 2"></HddIcon>
             <LaptopIcon v-if="lecture.id === 3"></LaptopIcon>
+            <AsterixIcon v-if="lecture.id === 4"></AsterixIcon>
+            <BodyTextIcon v-if="lecture.id === 5"></BodyTextIcon>
           </div>
         </div>
         <div class="col-12 text-align-center">Lecture {{ lecture.id }}</div>
@@ -59,7 +63,7 @@ const changeLecture = () => {
 
 .check-icon {
   position: absolute;
-  right: 0;
+  right: 10px;
   bottom: 5px;
   width: 145px;
   height: 25px;

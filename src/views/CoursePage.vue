@@ -4,44 +4,14 @@ import CourseIntroduction from "@/components/course-page-components/CourseIntrod
 import BaseDivider from "@/components/shared/BaseDivider.vue";
 import CourseBasics from "@/components/course-page-components/CourseBasics.vue";
 import CourseLectures from "@/components/course-page-components/CourseLectures.vue";
+import CourseTimetable from "@/components/course-page-components/CourseTimetable.vue";
+import CourseRules from "@/components/course-page-components/CourseRules.vue";
 
 const router = useRouter();
 
 // const courseId = parseInt(router.currentRoute.value.params.id);
 
 console.log("Router params: ", router.currentRoute.value.params);
-
-// const courses = [
-//   {
-//     id: 1,
-//     name: "Web programming",
-//     description: "Web programming description",
-//     teamsCode: "askda922",
-//     teamsLink:
-//       "https://teams.microsoft.com/l/team/19%3aBDS0rHT0wwhup7BM9PIRAOW5kPRZlMJe4MJTnLzFQ8Y1%40thread.tacv2/conversations?groupId=622548c3-bc48-41f8-b53f-d4b61fe975a3&tenantId=5a4863ed-40c8-4fd5-8298-fbfdb7f13095",
-//     resource: {
-//       name: "W3Schools",
-//       link: "https://www.w3schools.com/html/default.asp",
-//     },
-//     lectures: [
-//       {
-//         id: 1,
-//         title: "Introduction to web programming",
-//         pdf: "",
-//       },
-//       {
-//         id: 2,
-//         title: "Introduction to web programming",
-//         pdf: "",
-//       },
-//       {
-//         id: 3,
-//         title: "Introduction to web programming",
-//         pdf: "",
-//       },
-//     ],
-//   },
-// ];
 </script>
 
 <template>
@@ -52,6 +22,10 @@ console.log("Router params: ", router.currentRoute.value.params);
       <CourseBasics />
       <BaseDivider :reverse="true" />
       <CourseLectures />
+      <BaseDivider :reverse="false" />
+      <CourseTimetable />
+      <BaseDivider :reverse="true" />
+      <CourseRules />
     </div>
   </div>
 </template>

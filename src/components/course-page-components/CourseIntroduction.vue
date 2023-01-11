@@ -20,12 +20,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-align-center">
-          <p>W3Schools is the best resource for this course.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-align-center">
-          <button class="btn btn-primary">Go to W3Schools</button>
+          <button class="btn btn-primary">Discipline file</button>
         </div>
       </div>
     </div>
