@@ -25,7 +25,7 @@ const calendarOptions = {
     meridiem: "short",
   },
   headerToolbar: {
-    center: "dayGridMonth,dayGridWeek", // buttons for switching between views
+    right: "dayGridMonth,dayGridWeek", // buttons for switching between views
   },
   title: "Timetable",
 };
