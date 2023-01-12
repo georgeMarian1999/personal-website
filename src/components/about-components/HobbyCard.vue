@@ -19,7 +19,7 @@ const props = defineProps(["hobby"]);
         </div>
       </div>
       <div class="hobby-card-back">
-        <p>I love going to the gym in my free time</p>
+        <p>{{ hobby.description }}</p>
       </div>
     </div>
   </div>
