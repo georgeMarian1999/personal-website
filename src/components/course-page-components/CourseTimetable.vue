@@ -24,9 +24,6 @@ const calendarOptions = {
     minute: "2-digit",
     meridiem: "short",
   },
-  headerToolbar: {
-    right: "dayGridMonth,dayGridWeek", // buttons for switching between views
-  },
   title: "Timetable",
 };
 </script>
