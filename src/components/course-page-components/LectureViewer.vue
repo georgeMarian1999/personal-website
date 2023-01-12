@@ -46,7 +46,7 @@ const nextPage = () => {
             <div class="col-3">
               <ArrowLeft @click="previousPage" />
             </div>
-            <div class="col-5">{{ currentPage }} / {{ pageCount }}</div>
+            <div class="col-4">{{ currentPage }} / {{ pageCount }}</div>
             <div class="col-3">
               <ArrowRight class="bi-cursor" @click="nextPage" />
             </div>
@@ -79,7 +79,6 @@ const nextPage = () => {
       :disable-text-layer="true"
       :page="currentPage"
       :source="props.lecture.link"
-      width="500"
       @rendered="handleDocumentRender"
     />
   </div>
@@ -115,5 +114,20 @@ const nextPage = () => {
   right: 0;
   left: 0;
   min-height: 60px;
+}
+
+.vue-pdf-embed {
+  canvas {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .vue-pdf-embed {
+    canvas {
+      width: 100% !important;
+    }
+  }
 }
 </style>

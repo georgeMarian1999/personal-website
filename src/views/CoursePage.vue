@@ -37,7 +37,6 @@ console.log("Router params: ", router.currentRoute.value.params);
   .container {
     border-top: 1px solid var(--body-text);
     background: var(--component-background-color);
-    padding-bottom: 50px;
   }
 }
 
