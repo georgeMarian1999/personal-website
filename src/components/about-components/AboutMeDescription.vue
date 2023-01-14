@@ -4,7 +4,7 @@ import GitHubIcon from "../svg-components/GitHubIcon.vue";
 import InstagramIcon from "../svg-components/InstagramIcon.vue";
 
 const description =
-  "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.";
+  "I am a University Professor with a degree in Artificial Intelligence, Web Programming and Machine Learning from Harvard University. I am passionate about Web Design, Mobile Development, and Machine Learning projects. I strive to use my expertise in these areas to make a positive impact on the world. I have worked on a variety of projects in the past such as creating mobile apps, developing algorithms for machine learning, and designing websites. I have a strong understanding of the latest technologies and trends in the tech industry, and use my knowledge to develop innovative and effective solutions. My experience in these areas has allowed me to create projects that are both user-friendly and efficient. I am constantly looking for new challenges and opportunities to expand my knowledge and skills. I am passionate about technology, and believe that it has the potential to make a real difference in the world.\n";
 </script>
 
 <template>
@@ -21,11 +21,7 @@ const description =
           />
           <div class="check"><i class="fas fa-check"></i></div>
           <h3 class="name">George Marian</h3>
-          <p class="title">University Professor</p>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            aliquam aliquid porro!
-          </p>
+          <p class="date">University Professor</p>
         </div>
 
         <div class="social-icons">
@@ -60,6 +56,9 @@ const description =
 
 <style lang="scss">
 .description {
+  padding: 30px;
+  font-size: 16px;
+
   .col-12 {
     padding-left: 10px;
     padding-right: 10px;
@@ -169,7 +168,7 @@ $shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
       text-align: center;
     }
 
-    .title {
+    .date {
       color: var(--body-text);
       font-size: 0.75em;
       font-weight: 300;
@@ -192,6 +191,7 @@ $shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
   .social-icons {
     display: flex;
     margin-top: 1.2em;
+    margin-bottom: 1.2em;
     justify-content: space-between;
 
     .icon {
@@ -199,6 +199,19 @@ $shadow: 0 13px 26px rgba(#000, 0.2), 0 3px 6px rgba(#000, 0.2);
       display: flex;
       align-items: center;
       flex-direction: column;
+      transition: all 0.5s ease-in-out;
+
+      svg path {
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+
+        svg path {
+          fill: var(--primary-color);
+        }
+      }
     }
   }
 }

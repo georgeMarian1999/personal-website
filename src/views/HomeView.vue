@@ -11,9 +11,6 @@ import ImportantNews from "@/components/home-components/ImportantNews.vue";
       <div class="col-12 col-xl-6">
         <DescriptionCard></DescriptionCard>
       </div>
-      <!--      <div class="col-6 col-xl-3">-->
-      <!--        <ResearchPlaces />-->
-      <!--      </div>-->
       <div class="col-12 col-xl-6">
         <ImportantNews />
       </div>

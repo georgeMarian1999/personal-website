@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <div class="contact-footer row align-content-center">
-    <div class="col-6 d-none d-lg-block col-md-3 email-contact">
+  <div class="contact-footer row align-content-center justify-content-between">
+    <div class="col-6 d-none d-lg-block col-md-6 email-contact">
       <div class="row height-full align-content-center justify-content-center">
         <div class="row justify-content-center">Please email me at:</div>
         <div class="row justify-content-center">
@@ -27,16 +27,6 @@
         </div>
       </div>
     </div>
-    <div class="col-6 d-none d-lg-block col-md-3 phone-contact">
-      <div class="row height-full align-content-center justify-content-center">
-        <div class="row align-content-center justify-content-center">
-          In case of emergencies text me at:
-        </div>
-        <div class="row align-content-center justify-content-center">
-          + 1 (313) (4048) (290)
-        </div>
-      </div>
-    </div>
 
     <div class="col-12 d-lg-none col-lg-6 location-contact">
       <div class="row align-content-center justify-content-center">
@@ -55,20 +45,12 @@
         </div>
       </div>
     </div>
-    <div class="col-6 d-lg-none col-lg-3 email-contact">
+    <div class="col-6 d-lg-none col-lg-6 email-contact">
       <div class="row height-full align-content-center justify-content-center">
         <div class="row justify-content-center">Please email me at:</div>
         <div class="row justify-content-center">
           mariangeorge@scs.ubbcluj.ro
         </div>
-      </div>
-    </div>
-    <div class="col-6 d-lg-none col-lg-3 phone-contact">
-      <div class="row align-content-center justify-content-center">
-        In case of emergencies text me at:
-      </div>
-      <div class="row align-content-center justify-content-center">
-        + 1 (313) (4048) (290)
       </div>
     </div>
 
@@ -90,7 +72,10 @@
             </h1>
           </div>
           <div class="modal-body">
-            <p>You can find me in the FSEGA building at these hourse</p>
+            <p>
+              You can find me in the FSEGA building: Strada Teodor Mihali 58-60,
+              Cluj-Napoca 400591 at these hours
+            </p>
             <br />
             <p>Monday: Between 10:00 AM - 12:00 PM and 14:00 PM and 16:00 PM</p>
             <br />

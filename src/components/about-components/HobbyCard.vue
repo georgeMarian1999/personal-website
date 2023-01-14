@@ -15,7 +15,7 @@ const props = defineProps(["hobby"]);
             <GamingIcon v-if="hobby.id === 2" />
             <MobileDevPicture v-if="hobby.id === 3" />
           </div>
-          <div class="col-12 title">{{ props.hobby.title }}</div>
+          <div class="col-12 date">{{ props.hobby.title }}</div>
         </div>
       </div>
       <div class="hobby-card-back">
@@ -35,7 +35,7 @@ const props = defineProps(["hobby"]);
   font-family: sans-serif;
 }
 
-.title {
+.date {
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;

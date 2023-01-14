@@ -1,4 +1,12 @@
-<script setup></script>
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function goToNews() {
+  router.push({ name: "news" });
+}
+</script>
 
 <template>
   <div class="news-box-wrapper section-card">
@@ -8,7 +16,11 @@
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn btn-primary btn-see-all-news" type="button">
+          <button
+            class="btn btn-primary btn-see-all-news"
+            type="button"
+            @click="goToNews"
+          >
             See all news
           </button>
           <button

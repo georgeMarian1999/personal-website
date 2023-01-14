@@ -19,38 +19,35 @@ onMounted(() => {
     class="research-box-wrapper section-card"
   >
     <div class="research-box">
-      <div class="row mt-3 justify-content-center">
-        <div class="col text-align-center">
-          <p class="research-title">Bachelor/Dissertation collaboration</p>
+      <div class="row height-full align-content-around justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col text-align-center">
+            <p class="research-title">Bachelor/Dissertation collaboration</p>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-center">
-        <p
-          v-if="number < 5"
-          style="
-            color: red;
-            margin-top: -10px;
-            margin-bottom: -10px;
-            width: 140px;
-          "
-        >
-          Limited spaces!
-        </p>
-      </div>
-
-      <div class="row">
-        <div class="col text-align-center research-number">{{ number }}</div>
-      </div>
-
-      <div class="row">
-        <div class="col text-align-center">
-          Number of places left for a collaboration
+        <div class="row justify-content-center">
+          <p
+            v-if="number < 5"
+            style="
+              color: red;
+              margin-top: -10px;
+              margin-bottom: -10px;
+              width: 140px;
+            "
+          >
+            Limited spaces!
+          </p>
         </div>
-      </div>
-      <div class="row mt-2 justify-content-center align-content-center">
-        <button class="btn btn-primary btn-see-all-research">
-          See details
-        </button>
+
+        <div class="row">
+          <div class="col text-align-center research-number">{{ number }}</div>
+        </div>
+
+        <div class="row">
+          <div class="col text-align-center">
+            Number of places left for a collaboration
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -58,7 +55,7 @@ onMounted(() => {
 <style lang="scss">
 .research-box-wrapper {
   display: grid;
-  width: 100%;
+  max-width: 400px;
   place-items: center;
   position: relative;
   overflow: hidden;
@@ -71,7 +68,7 @@ onMounted(() => {
 }
 
 .research-number {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .limited-spaces-text {

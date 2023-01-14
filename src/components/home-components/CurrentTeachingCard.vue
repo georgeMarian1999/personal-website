@@ -1,6 +1,17 @@
 <script setup>
 import aiPicture from "@/assets/pictures/ai.jpg";
 import javascriptPicture from "@/assets/pictures/javascript.jpg";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function goToAiPage() {
+  router.push({ name: "course", params: { id: 2 } });
+}
+
+function goToWebProgrammingPage() {
+  router.push({ name: "course", params: { id: 1 } });
+}
 </script>
 
 <template>
@@ -65,6 +76,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                       class="btn mt-3 btn-primary"
                       style="width: 80%"
                       type="button"
+                      @click="goToAiPage"
                     >
                       See course page
                     </button>
@@ -100,6 +112,7 @@ import javascriptPicture from "@/assets/pictures/javascript.jpg";
                       class="btn btn-primary mt-3 mb-3"
                       style="width: 80%"
                       type="button"
+                      @click="goToWebProgrammingPage"
                     >
                       See course page
                     </button>

@@ -17,6 +17,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .active-switch {
   .svg-fill-color {
     fill: var(--background-color);
