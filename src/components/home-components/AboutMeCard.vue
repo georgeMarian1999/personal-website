@@ -1,5 +1,12 @@
 <script setup>
 import mobilePicture from "@/assets/pictures/mobile.jpg";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function seeMoreAboutMe() {
+  router.push({ name: "about" });
+}
 </script>
 
 <template>
@@ -22,9 +29,13 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
               second semester I am teaching Mobile App Development.
             </p>
           </div>
+          <div class="row">
+            <button class="btn btn-primary" @click="seeMoreAboutMe">
+              See more about me
+            </button>
+          </div>
         </div>
       </div>
-      <div class="row"></div>
     </div>
   </div>
 </template>
@@ -45,8 +56,14 @@ import mobilePicture from "@/assets/pictures/mobile.jpg";
   // margin-top: 10px;
   border-radius: 3px;
   padding-left: 25px !important;
-  padding-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   // margin-right: 45px;
   background: var(--component-background-color);
+
+  button {
+    margin-left: 10px;
+    max-width: 200px;
+  }
 }
 </style>
