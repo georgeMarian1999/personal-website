@@ -58,7 +58,7 @@ const nextPage = () => {
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 d-none d-sm-block">
           <div class="form-check">
             <input
               id="showAllPagesCheck"

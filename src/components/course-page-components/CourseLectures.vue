@@ -60,13 +60,13 @@ const currentLecture = ref(lectures[0]);
   <div
     class="row align-content-center position-relative justify-content-around"
   >
-    <div class="col-12 col-lg-5 course-page-lecture">
+    <div class="col-12 col-lg-8 col-xl-5 course-page-lecture">
       <LectureViewer :lecture="currentLecture" />
     </div>
     <div
       id="lectureCarousel"
       ref="lectureCarousel"
-      class="col-12 col-lg-5 course-page-lecture-list carousel slide"
+      class="col-12 col-xl-5 mt-3 course-page-lecture-list carousel slide"
     >
       <div class="carousel-inner">
         <div class="carousel-item active">

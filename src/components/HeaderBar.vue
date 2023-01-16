@@ -107,8 +107,8 @@
     0deg,
     #7270b3 10%,
     #5f5dde 24%,
-    #4240c7 56%,
-    #1b18c9 93%
+    #5e5dc4 56%,
+    #5c5ce5 93%
   );
   background-clip: text;
   -webkit-background-clip: text;
