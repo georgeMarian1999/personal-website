@@ -13,13 +13,13 @@ const interests = ref([
     id: 2,
     title: "Machine learning",
     description:
-      "Can be projects like Anomaly and Reuse Detection in Software Engineering, or even a project like the one I did in my internship at the University of Waterloo.",
+      "Project Idea: In this Machine Learning project for final year students, you will use the Zillows Economics dataset to build a house price prediction model with XGBoost based on factors like average income, crime rate, number of hospitals, number of schools, etc.",
   },
   {
     id: 3,
     title: "Extreme web design",
     description:
-      "Can be projects like Anomaly and Reuse Detection in Software Engineering, or even a project like the one I did in my internship at the University of Waterloo.",
+      "Can be projects with a lot of CSS and animations, can be something very creative and out of the box.",
   },
 ]);
 </script>

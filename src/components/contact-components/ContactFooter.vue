@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="col-12 d-lg-none col-lg-6 location-contact">
+    <div class="col-12 d-lg-none col-md-6 location-contact">
       <div class="row align-content-center justify-content-center">
         You can find me Monday, Tuesday, Thursday and Friday in the FSEGA
         building.
@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6 d-lg-none col-lg-6 email-contact">
+    <div class="col-6 d-lg-none col-md-6 email-contact">
       <div class="row height-full align-content-center justify-content-center">
         <div class="row justify-content-center">Please email me at:</div>
         <div class="row justify-content-center">
