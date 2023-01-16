@@ -1,4 +1,9 @@
-<script setup></script>
+<script setup>
+function openDisciplineFile() {
+  window.location.href =
+    "https://www.cs.ubbcluj.ro/files/curricula/2022/syllabus/MIR_sem6_MLR5015_ro_diana.sotropa_2022_7339.pdf";
+}
+</script>
 
 <template>
   <div class="row align-content-center justify-content-center">
@@ -20,7 +25,9 @@
       </div>
       <div class="row">
         <div class="col-12 text-align-center">
-          <button class="btn btn-primary">Discipline file</button>
+          <button class="btn btn-primary" @click="openDisciplineFile">
+            Discipline file
+          </button>
         </div>
       </div>
     </div>
