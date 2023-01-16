@@ -2,7 +2,9 @@
 <template>
   <nav class="header-bar navbar-dark navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand header-logo" href="#">Babes-Bolyai University</a>
+      <router-link :to="{ name: 'home' }" class="navbar-brand header-logo"
+        >Babes-Bolyai University</router-link
+      >
       <button
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
